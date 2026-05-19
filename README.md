@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Configure SentinelOne Shift Left CLI
-        run: s1-cns-cli config --service-user-api-token ${{ secrets.S1_SERVICE_USER_eyJraWQiOiJhcC1zb3V0aGVhc3QtMS1wcm9kLTAiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJzZXJ2aWNldXNlci02M2YyYTJjZi04NGUwLTQwNTUtYmZmNC1mZmI5YjA5ZjA0MjlAbWdtdC0zNjUuc2VudGluZWxvbmUubmV0IiwiaXNzIjoiYXV0aG4tYXAtc291dGhlYXN0LTEtcHJvZCIsImRlcGxveW1lbnRfaWQiOiIzNjUiLCJ0eXBlIjoidXNlciIsImV4cCI6MTc3ODkyMDMyNCwiaWF0IjoxNzc4MzE1NTk1LCJqdGkiOiJiYTNkYWNhNy1lZjA0LTQzYmYtOGFkYS0wM2JhOGNkOGJlNTkifQ.Px_NTWPO1PW3E096PDeXhx5u4zykK4N9ZEU_qQUUf0mMTP8SjTMX7Xu-NyN5ANX_7gV-EYkG1itkdJPQrxPlqg }} --management-console-url https://apne1-1101-nfr.sentinelone.net --scope-type SITE --scope-id 2275982547588701440 --tag ${{ secrets.tag }}
+        run: s1-cns-cli config --service-user-api-token ${{eyJraWQiOiJhcC1zb3V0aGVhc3QtMS1wcm9kLTAiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJzZXJ2aWNldXNlci02M2YyYTJjZi04NGUwLTQwNTUtYmZmNC1mZmI5YjA5ZjA0MjlAbWdtdC0zNjUuc2VudGluZWxvbmUubmV0IiwiaXNzIjoiYXV0aG4tYXAtc291dGhlYXN0LTEtcHJvZCIsImRlcGxveW1lbnRfaWQiOiIzNjUiLCJ0eXBlIjoidXNlciIsImV4cCI6MTc3ODkyMDMyNCwiaWF0IjoxNzc4MzE1NTk1LCJqdGkiOiJiYTNkYWNhNy1lZjA0LTQzYmYtOGFkYS0wM2JhOGNkOGJlNTkifQ.Px_NTWPO1PW3E096PDeXhx5u4zykK4N9ZEU_qQUUf0mMTP8SjTMX7Xu-NyN5ANX_7gV-EYkG1itkdJPQrxPlqg }} --management-console-url https://apne1-1101-nfr.sentinelone.net --scope-type SITE --scope-id 2275982547588701440 --tag ${{ secrets.tag }}
 
       - name: Configure git config
         run: git config --global --add safe.directory $PWD
